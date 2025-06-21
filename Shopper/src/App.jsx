@@ -15,7 +15,7 @@ function App() {
 {
     path: '/Cart',
     element: <><Header/><Cart/></>
-  }]);
+  }],{basename: import.meta.env.DEV ? '/' : '/Shopper'});
 
   return (
     <>
