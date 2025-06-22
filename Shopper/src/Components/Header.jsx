@@ -11,6 +11,7 @@ import {FaShoppingCart} from 'react-icons/fa'
 import {Link} from "react-router-dom"
 import { cartState } from '../Context/Context';
 import { AiFillDelete } from "react-icons/ai";
+import pngegg from '../assets/pngegg.png'
 
 function Header() {
   const {state:{cart},dispatch,productDispatch}=cartState();
@@ -18,7 +19,7 @@ function Header() {
       <Navbar bg='dark' variant='dark' style={{height:80}}>
         <Container>
             <Navbar.Brand>
-                <Link to="/"><img className='bi' src="./img/pngegg.png" alt="Thrift Shop" /></Link>
+                <Link to="/"><img className='bi' src={pngegg} alt="Thrift Shop" /></Link>
             </Navbar.Brand>
             <Navbar.Text className='search'>
                 <FormControl
