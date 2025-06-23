@@ -47,7 +47,7 @@ function Header() {
                              <span className="cartitem" key={prod.id}>
                       <img
                         src={prod.image}
-                        className="cartItemImg"
+                        className="cartItemImg images"
                         alt={prod.name}
                       />
                       <div className="cartItemDetail">

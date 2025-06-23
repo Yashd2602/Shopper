@@ -15,7 +15,14 @@ a {
   text-decoration: none !important;
   color: inherit !important;
 }
-
+.container{
+  width: 100%;
+}
+.dropdown{
+  position: absolute;
+  right: 7px;
+  bottom: 18px;
+}
 /* Not Found Page */
 .nfp {
   display: flex;
@@ -218,6 +225,7 @@ a {
   padding: 30px;
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
   display: flex;
+  align-items: center;
   height: 500px;
   flex-direction: column;
   gap: 25px;
@@ -245,6 +253,7 @@ a {
   padding: 14px;
   font-size: 16px;
   font-weight: 600;
+  display: flex;
   border: none;
   border-radius: 12px;
   cursor: pointer;
@@ -324,8 +333,8 @@ a {
   }
 
   .cartItemImg {
-    width: 100%;
-    height: auto;
+    width: 100px;
+    height: 100px;
     margin-bottom: 10px;
   }
 
