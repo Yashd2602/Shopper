@@ -5,11 +5,11 @@ import { cartReducer, productReducer } from './Reducers';
 const cartContext = createContext();
 faker.seed(99);
 function Context({children}) {
-const products = [...Array(20)].map(()=>({
+const products = [...Array(40)].map(()=>({
     id:faker.string.uuid(),
     name:faker.commerce.productName(),
     price:faker.commerce.price({ min: 100, max: 10000, dec: 0 }),
-    image:faker.image.personPortrait(),
+    image:faker.image.urlPicsumPhotos({ category: 'product' }),
     inStock: faker.helpers.arrayElement([0,3,5,6,7]),
     fastDelivery: faker.datatype.boolean(),
     ratings: faker.helpers.arrayElement([1, 2, 3, 4, 5]),
