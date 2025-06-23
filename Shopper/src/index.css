@@ -270,7 +270,10 @@ a {
   cursor: pointer;
   transition: 0.2s ease;
 }
-
+ .thanks{
+    text-align: center;
+    margin-top: 50px;
+  }
 .bth:hover {
   background: #444;
 }
@@ -280,6 +283,7 @@ a {
   .home {
     flex-direction: column;
   }
+ 
 
   .filters {
     width: 100%;

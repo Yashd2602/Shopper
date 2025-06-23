@@ -64,10 +64,17 @@ function Cart() {
         </ListGroup>
       </div>
       <div className="filters summary">
-        <span className="title">SubTotal ({cart.length}) Items</span>
-        <span className='summaryTotal' style={{fontWeight:700,fontSize:20}}>Total: ₹{total} </span>
-<Button type='button'>Proceed to Checkout</Button>
-      </div>
+  <span className="title">SubTotal ({cart.length}) Items</span>
+  <span className="summaryTotal" style={{ fontWeight: 700, fontSize: 20 }}>
+    Total: ₹{total}
+  </span>
+
+  <Link to={cart.length > 0 ? "/thanks" : "#"}>
+    <Button type="button" disabled={cart.length === 0}>
+      Proceed to Checkout
+    </Button>
+  </Link>
+</div>
     </div>
   )
 }

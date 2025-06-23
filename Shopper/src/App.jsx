@@ -5,12 +5,17 @@ import {createBrowserRouter,RouterProvider} from'react-router-dom';
 import Home from './Components/Home';
 import Cart from './Components/Cart';
 import NotFoundPage from './Components/NotFoundPage';
+import Thanks from './Components/Thanks';
 
 function App() {
   const router = createBrowserRouter([{
     path: '/',
     element: <><Header/><Home/></>,
     errorElement:<NotFoundPage />
+  },
+  {
+    path: '/thanks',
+    element: <Thanks />
   },
 {
     path: '/Cart',
